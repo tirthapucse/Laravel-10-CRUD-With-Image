@@ -22,7 +22,10 @@
                             <td>{{ $loop->index+1 }}</td>
                             <td> <a href="products/{{ $product->id }}/show" class="text-dark">{{ $product->name }}</a></td>
                             <td>
-                                <img src="/images/products/{{ $product->image }}" 
+                                <!-- <img src="/public/images/products/{{ $product->image }}" 
+                                class="rounded-circle" width="50" 
+                                height="50">  -->
+                                <img src="{{ URL::to('/') }}/images/{{ $product->image }}" 
                                 class="rounded-circle" width="50" 
                                 height="50">
                             </td>

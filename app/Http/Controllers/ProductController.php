@@ -95,7 +95,16 @@ class ProductController extends Controller
         return view('products.show',['product'=>$product]);
     }
 
+
+
+
 }
+
+
+
+
+
+
 
 
 // to check the codes goes well or not: dd($request->all());

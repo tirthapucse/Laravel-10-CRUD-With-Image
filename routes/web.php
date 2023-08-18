@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\StockController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -24,5 +26,5 @@ Route::put('products/{id}/update', [ProductController::class,'update'])->name('p
 Route::get('products/{id}/delete', [ProductController::class,'destroy'])->name('products.destroy');
 Route::get('products/{id}/show', [ProductController::class,'show'])->name('products.show');
 
-
+Route::get('products/stock', [StockController::class,'stock']);
 
